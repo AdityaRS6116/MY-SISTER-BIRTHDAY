@@ -1,0 +1,191 @@
+/* ═══════════════════════════════════════════════════════════
+   HARSHITA'S MAGICAL BIRTHDAY WEBSITE - GLOBAL STYLES
+   Dreamy Pink × Lavender × Fairytale
+═══════════════════════════════════════════════════════════ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette */
+  --blush: #f9a8d4;
+  --blush-light: #fce7f3;
+  --blush-dark: #ec4899;
+  --lavender: #c4b5fd;
+  --lavender-light: #ede9fe;
+  --lavender-dark: #7c3aed;
+  --purple: #a78bfa;
+  --rose-gold: #e8b4b8;
+  --champagne: #f7e7ce;
+  --cream: #fff9f5;
+  --white: #ffffff;
+
+  /* Gradients */
+  --grad-main: linear-gradient(135deg, #fce7f3 0%, #ede9fe 50%, #fdf4ff 100%);
+  --grad-pink: linear-gradient(135deg, #f9a8d4, #ec4899);
+  --grad-lavender: linear-gradient(135deg, #c4b5fd, #7c3aed);
+  --grad-rose: linear-gradient(135deg, #fce7f3, #c4b5fd, #fdf4ff);
+  --grad-gold: linear-gradient(135deg, #f7e7ce, #e8b4b8, #f9a8d4);
+  --grad-finale: linear-gradient(160deg, #1a0a2e 0%, #2d1052 40%, #4a1a7a 100%);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-lora: 'Lora', Georgia, serif;
+
+  /* Shadows */
+  --shadow-soft: 0 8px 32px rgba(236, 72, 153, 0.15);
+  --shadow-card: 0 20px 60px rgba(124, 58, 237, 0.15);
+  --shadow-glow: 0 0 40px rgba(249, 168, 212, 0.4);
+
+  /* Misc */
+  --radius: 24px;
+  --radius-sm: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--grad-main);
+  color: #4a1a5c;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────── */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+}
+
+.script {
+  font-family: var(--font-script);
+}
+
+/* ── BUTTONS ────────────────────────────────────────────── */
+.btn-magic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 50px;
+  background: var(--grad-pink);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(236, 72, 153, 0.4), 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-magic::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), transparent);
+  border-radius: inherit;
+}
+
+.btn-magic:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 16px rgba(236, 72, 153, 0.3);
+}
+
+.btn-lavender {
+  background: var(--grad-lavender);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.4);
+}
+
+/* ── GLASS CARDS ────────────────────────────────────────── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+/* ── SECTION WRAPPER ────────────────────────────────────── */
+.section {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── PARTICLES BASE ─────────────────────────────────────── */
+.particle-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* ── SECTION HEADINGS ───────────────────────────────────── */
+.section-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 700;
+  background: var(--grad-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-subheading {
+  font-family: var(--font-script);
+  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+  color: var(--purple);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* ── CUSTOM SCROLLBAR ───────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blush);
+  border-radius: 4px;
+}
+
+/* ── CONFETTI CANVAS ────────────────────────────────────── */
+.confetti-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
