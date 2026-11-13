@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Confetti from './Confetti.jsx';
 import FloatingParticles from './FloatingParticles.jsx';
-import config from '../config.js';
+import config from "./config.js";
 
 export default function SplashScreen({ onOpen }) {
   const [phase, setPhase] = useState('idle'); // idle | shaking | opening | done
