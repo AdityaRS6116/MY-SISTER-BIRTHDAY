@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import FloatingParticles from './FloatingParticles.jsx';
-import config from '../config.js';
+import config from "./config.js";
 
 // Animated Birthday Cake SVG
 function BirthdayCakeSVG() {
