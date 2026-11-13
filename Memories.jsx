@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import config from '../config.js';
+import config from "./config.js";
 
 // Placeholder component shown when no photo is provided
 function PhotoPlaceholder({ caption }) {
