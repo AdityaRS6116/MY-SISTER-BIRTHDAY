@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import config from '../config.js';
+import config from "./config.js";
 
 const CARD_COLORS = [
   {
