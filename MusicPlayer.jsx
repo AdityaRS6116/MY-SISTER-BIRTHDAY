@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import config from '../config.js';
+import config from "./config.js";
 
 export default function MusicPlayer() {
   const [playing, setPlaying] = useState(false);
