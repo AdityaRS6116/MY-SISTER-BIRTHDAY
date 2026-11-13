@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import config from '../config.js';
+import config from "./config.js";
 
 export default function PhotoMoment() {
   const [loaded, setLoaded] = useState(false);
