@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import config from '../config.js';
+import config from "./config.js";
 
 const letterText = config.messages.letterContent;
 
