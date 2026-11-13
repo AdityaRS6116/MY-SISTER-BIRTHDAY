@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Confetti from './Confetti.jsx';
-import config from '../config.js';
+import config from "./config.js";
 
 // Interactive CSS Birthday Cake
 function InteractiveCake({ blownOut, onBlow }) {
