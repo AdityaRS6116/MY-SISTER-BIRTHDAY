@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import SplashScreen from './components/SplashScreen.jsx';
-import BirthdayReveal from './components/BirthdayReveal.jsx';
-import Memories from './components/Memories.jsx';
-import Letter from './components/Letter.jsx';
-import SecretSurprises from './components/SecretSurprises.jsx';
-import CakeSection from './components/CakeSection.jsx';
-import PhotoMoment from './components/PhotoMoment.jsx';
-import GrandFinale from './components/GrandFinale.jsx';
-import MusicPlayer from './components/MusicPlayer.jsx';
+import SplashScreen from './SplashScreen.jsx';
+import BirthdayReveal from './BirthdayReveal.jsx';
+import Memories from './Memories.jsx';
+import Letter from './Letter.jsx';
+import SecretSurprises from './SecretSurprises.jsx';
+import CakeSection from './CakeSection.jsx';
+import PhotoMoment from './PhotoMoment.jsx';
+import GrandFinale from './GrandFinale.jsx';
+import MusicPlayer from './MusicPlayer.jsx';
 
 // Progress dots for navigation
 function NavDots({ current, total, sections }) {
