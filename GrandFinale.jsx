@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Confetti from './Confetti.jsx';
-import config from '../config.js';
+import config from "./config.js";
 
 // Final floating hearts full screen
 function FinalHearts() {
